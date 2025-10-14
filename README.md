@@ -2,7 +2,8 @@
 
 Projeto do curso de Análise e Desenvolvimento de Sistemas pela matéria de Programação Web FrontEnd do professor Josimar dos Santos
 
-[Figma](https://www.figma.com/design/8XAqXJoiFsLM3EudVeCLFz/Prot%C3%B3tipo-Portif%C3%B3lio?node-id=0-1&t=7pO2rDdwWPtgAbEZ-1)
+[Protótipo de Média Fidelidade](https://www.figma.com/design/8XAqXJoiFsLM3EudVeCLFz/Prot%C3%B3tipo-Portif%C3%B3lio?node-id=0-1&t=7pO2rDdwWPtgAbEZ-1)
+<img width="1142" height="837" alt="image" src="https://github.com/user-attachments/assets/d2678afc-22cb-4fe6-8ebc-73c931d8340f" />
 
 ## 🛠️ Construído com
 
