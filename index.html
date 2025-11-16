@@ -1,22 +1,401 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifólio - Faterzin</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Portfólio - Rafael Nascimento</title>
     <link rel="stylesheet" href="reset.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
-    <header class="dark">
-        <p>AAAAAAA</p>
-    </header>
+
+<body data-theme="light">
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Rafael</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projetos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contato</a>
+                </li>
+            </ul>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
     <main>
-        <p>AAAAAAAAAAA</p>
+        <section id="home" class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        Olá, eu sou <span class="highlight">Rafael Nascimento</span>
+                    </h1>
+                    <p class="hero-subtitle">Desenvolvedor Full Stack</p>
+                    <p class="hero-description">
+                        Apaixonado por criar soluções digitais inovadoras e experiências de usuário excepcionais.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">Ver Projetos</a>
+                        <a href="#" class="btn btn-secondary" id="downloadCV">
+                            <i class="fas fa-download"></i>
+                            Download CV
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-card">
+                        <img src="assets/eu.png" alt="Rafael Nascimento" style="max-width: 300px; border-radius: 6%;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">Sobre Mim</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            Sou um desenvolvedor full stack com paixão por criar aplicações web modernas e funcionais.
+                            Com experiência em diversas tecnologias, busco sempre entregar soluções de alta qualidade
+                            que atendam às necessidades dos usuários.
+                        </p>
+                        <p>
+                            Minha jornada na programação começou com curiosidade e se transformou em uma carreira
+                            dedicada ao desenvolvimento de software. Estou sempre aprendendo novas tecnologias e
+                            aprimorando minhas habilidades.
+                        </p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h3>2+</h3>
+                            <p>Anos de Experiência</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>10+</h3>
+                            <p>Projetos Concluídos</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>10+</h3>
+                            <p>Tecnologias</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section-title">Minhas Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Frontend</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <i class="fab fa-html5"></i>
+                                <span>HTML5</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-css3-alt"></i>
+                                <span>CSS3</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-js-square"></i>
+                                <span>JavaScript</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="24" fill="#3b82f6"
+                                    class="bi bi-typescript" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M14 0a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zm-1.139 7.488q-.585 0-1.006.244a1.67 1.67 0 0 0-.634.674 2.1 2.1 0 0 0-.225.996q0 .753.293 1.182.303.42.967.732l.469.215q.438.186.625.43.185.244.185.635 0 .478-.166.703-.156.224-.527.224-.361.001-.547-.244-.186-.243-.205-.752h-1.162q.02.996.498 1.524.479.527 1.386.527.909 0 1.417-.518.507-.517.507-1.484 0-.81-.332-1.289t-1.045-.79l-.449-.196q-.39-.166-.556-.381-.166-.214-.166-.576 0-.4.165-.596.177-.195.508-.195.361 0 .508.234.156.234.176.703h1.123q-.03-.976-.498-1.484-.47-.518-1.309-.518M7 7.596v1.113h1.3V14.5h1.221V8.709h1.289V7.596z" />
+                                </svg>
+                                <span style="padding-left: 0.7rem;">TypeScript</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-react"></i>
+                                <span>React</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="75" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Backend</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <i class="fab fa-php"></i>
+                                <span>PHP</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-node-js"></i>
+                                <span>Node.js</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="70" style="width: 70%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-python"></i>
+                                <span>Python</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="65" style="width: 65%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-database"></i>
+                                <span>MySQL</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="70" style="width: 70%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-git-alt"></i>
+                                <span>Git</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">Meus Projetos</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-code"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Página de Lâmpada</h3>
+                            <p>Uma página de lâmpada que simula o funcionamento de uma lâmpada básica.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Faterzin/lampada" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                    Código
+                                </a>
+                                <a href="/lampada/index.html" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Abrir
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-code"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Carros</h3>
+                            <p>Sisteminha básico de corrida de carros utilizando as setinhas do teclado</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Faterzin/carros" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                    Código
+                                </a>
+                                <a href="/carros/index.html" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Ver
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-code"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Calculadora</h3>
+                            <p>Calculadora simples com algumas interações e sistema de histórico</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Faterzin/calculadora-v1" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                    Código
+                                </a>
+                                <a href="/calculadora/index.html" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Ver
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Entre em Contato</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p>rafael@exemplo.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h3>Telefone</h3>
+                                <p>+55 (11) 99999-9999</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Localização</h3>
+                                <p>São Paulo, SP - Brasil</p>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" class="social-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-form-container">
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="Seu Nome">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="email" name="email" placeholder="Seu Email">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="subject" name="subject" placeholder="Assunto">
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" placeholder="Sua Mensagem" rows="5"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i>
+                                Enviar Mensagem
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
     <footer>
-        <p>AAAAAAA</p>
+        <h2 class="footer-copy-zenix">
+            <a href="https://zenixcode.com.br/" target="_blank">
+                ZENIX<span class="blue">CODE</span>
+            </a>
+        </h2>
+        <div class="footer-copy">
+            <p>&copy; ZenixCode, todos os direitos reservados.</p>
+        </div>
     </footer>
+
+    <style>
+        footer {
+            background: black;
+            text-align: center;
+            padding: 30px 0 20px;
+            color: white;
+            position: relative;
+        }
+
+        .footer-copy-zenix {
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .footer-copy-zenix:hover {
+            font-weight: 700;
+        }
+
+        .footer-copy-zenix a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-copy-zenix a .blue {
+            color: blue;
+        }
+    </style>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
